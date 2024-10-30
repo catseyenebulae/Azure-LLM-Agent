@@ -194,7 +194,8 @@
       "properties": {
         "administratorLogin": "[parameters('SQLAdministratorLogin')]",
         "administratorLoginPassword": "[parameters('SQLAdministratorLoginPassword')]"
-      }
+      },
+      "minimalTlsVersion": "1.2"
     },
     {
       "type": "Microsoft.Sql/servers/databases",
@@ -313,7 +314,8 @@
       "kind": "StorageV2",
       "sku": {
         "name": "Standard_LRS"
-      }
+      },
+      "minimumTlsVersion": "TLS1_2"
     },
     {
       "type": "Microsoft.Storage/storageAccounts/blobServices",
